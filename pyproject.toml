@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pi-portal"
+version = "0.1.0"
+description = ""
+authors = ["Sarim Abbas <sarim.stays@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rpimotorlib = "^3.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.5b2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

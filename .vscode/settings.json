@@ -1,0 +1,11 @@
+{
+  "python.pythonPath": ".venv/bin/python",
+  "sshfs.configs": [
+    {
+      "name": "connect-to-pi",
+      "host": "192.168.195.137",
+      "username": "pi",
+      "password": "raspberry"
+    }
+  ]
+}

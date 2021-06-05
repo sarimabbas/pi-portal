@@ -3,13 +3,14 @@ import RPi.GPIO as GPIO
 # import the library
 from RpiMotorLib import RpiMotorLib
 
-GpioPins = [6, 13, 19, 26]
+#
+gpioPins = [5, 6, 19, 26]
 
 # Declare an named instance of class pass a name and motor type
-mymotortest = RpiMotorLib.BYJMotor("MyMotorOne", "28BYJ")
+myMotor = RpiMotorLib.BYJMotor("MyMotor", "Nema")
 
 # call the function pass the parameters
-mymotortest.motor_run(GpioPins , .001, 1024, False, False, "full", .05)
+myMotor.motor_run(gpioPins, 0.001, 1024, False, False, "full", 0.05)
 
 # good practise to cleanup GPIO at some point before exit
 GPIO.cleanup()
